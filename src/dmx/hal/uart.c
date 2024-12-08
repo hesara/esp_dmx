@@ -19,6 +19,10 @@
 #include "driver/timer.h"
 #endif
 
+#if CONFIG_IDF_TARGET_ESP32C6
+#include "soc/lp_clkrst_struct.h"
+#endif
+
 #define DMX_UART_FULL_DEFAULT 1
 #define DMX_UART_EMPTY_DEFAULT 8
 
